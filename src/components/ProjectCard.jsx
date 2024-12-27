@@ -11,24 +11,27 @@ import { Button } from "@/components/ui/button";
 import { MyCarousel } from "@/components/MyCarousel";
 
 export const ProjectCard = ({ project }) => {
-  const { name, description, techStack, sourceCode, link } = project;
+  const { name, description, techStack, sourceCode, link, thumbnail } = project;
+  console.log(sourceCode, link);
 
   return (
     <Card className="mx-5 md:mx-40 my-4 bg-white dark:bg-gray-800 shadow-lg rounded-lg">
       {/* Thumbnail */}
       <CardHeader className="p-0">
-        <MyCarousel props={project.thumbnail} />
+        <MyCarousel props={thumbnail} />
       </CardHeader>
 
       <CardContent className="p-4">
         {/* Project Name */}
         <CardTitle className="text-2xl font-semibold text-gray-900 dark:text-white">
-          {project.name}
+          {name}
         </CardTitle>
 
         {/* Project Description */}
-        {project.description.map((description) => (
-          <CardDescription className="pb-2">{description}</CardDescription>
+        {description.map((description) => (
+          <CardDescription key={description} className="pb-2">
+            {description}
+          </CardDescription>
         ))}
 
         {/* Tech Stack */}
@@ -37,7 +40,7 @@ export const ProjectCard = ({ project }) => {
             Tech Stack:
           </span>
           <div className="mt-2 flex flex-wrap gap-2">
-            {project.techStack.map((tech, index) => (
+            {techStack.map((tech, index) => (
               <Badge key={index} className="bg-teal-500 text-white">
                 {tech}
               </Badge>
@@ -51,23 +54,23 @@ export const ProjectCard = ({ project }) => {
         {/* Source Code */}
         <Button
           variant="outline"
-          href={project.sourceCode}
-          target="_blank"
-          rel="noopener noreferrer"
+          asChild
           className="text-blue-500 hover:underline text-sm"
         >
-          Source Code
+          <a href={sourceCode} target="_blank" rel="noopener noreferrer">
+            Source Code
+          </a>
         </Button>
 
         {/* Live Link */}
         <Button
           variant="outline"
-          href={project.link}
-          target="_blank"
-          rel="noopener noreferrer"
+          asChild
           className="text-blue-500 hover:underline text-sm"
         >
-          Live Link
+          <a href={link} target="_blank" rel="noopener noreferrer">
+            Live Link
+          </a>
         </Button>
       </CardFooter>
     </Card>
