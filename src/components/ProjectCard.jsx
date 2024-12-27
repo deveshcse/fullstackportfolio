@@ -13,10 +13,6 @@ import { MyCarousel } from "@/components/MyCarousel";
 export const ProjectCard = ({ project }) => {
   const { name, description, techStack, sourceCode, link } = project;
 
-  console.log(name, description, techStack, sourceCode, link);
-
-  console.log(project.description, typeof project.description);
-
   return (
     <Card className="mx-5 md:mx-40 my-4 bg-white dark:bg-gray-800 shadow-lg rounded-lg">
       {/* Thumbnail */}
