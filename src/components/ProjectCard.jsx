@@ -32,11 +32,11 @@ export const ProjectCard = ({ project }) => {
 
         {/* Project Description */}
         {project.description.map((description) => (
-          <CardDescription>{description}</CardDescription>
+          <CardDescription className="pb-2">{description}</CardDescription>
         ))}
 
         {/* Tech Stack */}
-        <div className="mt-4">
+        <div className="mt-2">
           <span className="font-semibold text-gray-900 dark:text-white">
             Tech Stack:
           </span>
@@ -51,7 +51,7 @@ export const ProjectCard = ({ project }) => {
       </CardContent>
 
       {/* Footer with Links */}
-      <CardFooter className="flex justify-start gap-5 items-center p-4">
+      <CardFooter className="flex justify-start gap-5 items-center px-4">
         {/* Source Code */}
         <Button
           variant="outline"
