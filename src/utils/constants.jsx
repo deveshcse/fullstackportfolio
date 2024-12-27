@@ -12,11 +12,11 @@ export const projects = [
     link: "https://essentialsdeveshcse.netlify.app/",
     sourceCode: "https://github.com/deveshcse/Essentials",
     thumbnail: [
-      "src/assets/Essentials001.png",
-      "src/assets/Essentials002.png",
-      "src/assets/Essentials003.png",
-      "src/assets/Essentials004.png",
-      "src/assets/Essentials005.png",
+      "/Essentials001.png",
+      "/Essentials002.png",
+      "/Essentials003.png",
+      "/Essentials004.png",
+      "/Essentials005.png",
     ],
   },
 
@@ -49,10 +49,10 @@ export const projects = [
     link: "https://assignmentdeveshcse.netlify.app/",
     sourceCode: "https://github.com/deveshcse/fullstackassignment.git",
     thumbnail: [
-      "src/assets/ScholarSync001.png",
-      "src/assets/ScholarSync002.png",
-      "src/assets/ScholarSync003.png",
-      "src/assets/ScholarSync004.png",
+      "/ScholarSync001.png",
+      "/ScholarSync002.png",
+      "/ScholarSync003.png",
+      "/ScholarSync004.png",
     ],
   },
 
@@ -73,7 +73,7 @@ export const projects = [
     ],
     link: "https://vidstreamdeveshcse.netlify.app/",
     sourceCode: "https://github.com/deveshcse/vidstream/",
-    thumbnail: ["src/assets/VidStream001.png", "src/assets/VidStream002.png"], // Add the image path here
+    thumbnail: ["/VidStream001.png", "/VidStream002.png"], // Add the image path here
   },
 
   {
@@ -89,7 +89,7 @@ export const projects = [
     techStack: ["Python", "Sci-kit Learn", "Streamlit", "Pandas", "Matplotlib"],
     link: "https://crop-recommendation-app-deveshcse.streamlit.app/",
     sourceCode: "https://github.com/deveshcse/crop-recommendation-app",
-    thumbnail: ["src/assets/croprecommendation001.png"], // Add the image path here
+    thumbnail: ["/croprecommendation001.png"], // Add the image path here
   },
 ];
 
@@ -150,4 +150,4 @@ export const skills = [
   },
 ];
 
-export const resumePath = "src/assets/DeveshMishra_1YOE_FrontendDeveloper.pdf";
+export const resumePath = "/DeveshMishra_1YOE_FrontendDeveloper.pdf";

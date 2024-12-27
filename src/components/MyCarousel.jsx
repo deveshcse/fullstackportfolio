@@ -11,7 +11,7 @@ import {
 } from "@/components/ui/carousel";
 
 export const MyCarousel = ({props}) => {
-    
+
   const plugin = React.useRef(
     Autoplay({ delay: 2000, stopOnInteraction: true })
   );
@@ -30,7 +30,7 @@ export const MyCarousel = ({props}) => {
             <div className="p-1">
               <Card>
                 <CardContent className="flex items-center justify-center p-6">
-                  <img className="rounded-sm" src={props[index]} alt="img" />
+                  <img className="rounded-sm"  src={props[index]} alt="img" />
                 </CardContent>
               </Card>
             </div>

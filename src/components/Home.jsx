@@ -65,7 +65,7 @@ export const Home = () => {
       <div className="rounded-full md:p-12 flex items-center justify-center">
           <img
             className="rounded-full  md:w-[400px] md:h-[400px]"
-            src='/src/assets/DeveshProfileImage.jpeg'
+            src='/DeveshProfileImage.jpeg'
             alt="ProfileImage"
           ></img>
 
